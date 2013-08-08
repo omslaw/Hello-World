@@ -1,0 +1,33 @@
+a good example here:
+http://lifehacker.com/5983680/how-the-heck-do-i-use-github
+
+one way if you have existing files on your pc. you create repo with the addional files like README. 
+then on local machine that already has GIT installed:
+
+- git init   (this initializes that directory with your files.)
+- git add FILENAME  
+- git commit -m 'test commit' 
+
+Now you add the repo location:
+
+- git remote add origin https://github.com/USERNAME/REPO_NAME.git
+
+Then to push it to the repo (but this won't work right off the bat):
+
+- git push origin master 
+
+Reason it won't is that I should first pull or just merge the repo:
+
+- git pull origin master
+
+Now you should have the repo's README file and such. Now you can add all your files in the directory if you haven't yet
+
+- git add *
+- git status    (to double check) (you don't need .pyc files, so you can remove them)
+- git commit -m 'XXXXXX'
+- git push origin master
+
+
+
+
+
